@@ -9,7 +9,7 @@ RUN pip install uwsgi
 
 WORKDIR /usr/src/app
 
-COPY . /usr/src/app/
+COPY ./src/ /usr/src/app/
 COPY ./docker_files/entrypoint.sh /usr/src/app/
 COPY ./docker_files/uwsgi.ini /usr/src/app/
 COPY ./docker_files/nginx.conf /etc/nginx/nginx.conf
