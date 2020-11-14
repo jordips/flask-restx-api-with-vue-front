@@ -33,7 +33,7 @@ class TodoList(Resource):
         """
         Adds a new todo to the list
         """
-        todo = api.payload
+        todo = ns.payload
         todo['id'] = randint(0, 1000)
         todos.append(todo)
         return todo
@@ -68,6 +68,6 @@ class Todo(Resource):
         '''Update a task given its identifier'''
         for todo in todos:
             if todo['id'] == id:
-                todo.update(api.payload)
+                todo.update(ns.payload)
                 return todo
         api.abort(404, "Todo {} doesn't exist".format(id))
