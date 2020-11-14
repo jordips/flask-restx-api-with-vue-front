@@ -59,3 +59,8 @@ pip3 install -r requirements.txt
 python3 run.py
 ```
 Once Docker is running you can access Swagger via http://localhost:5000/api and VUE UI through http://localhost:5000/
+
+
+## Special thanks
+
+-  https://testdriven.io/blog/combine-flask-vue/
