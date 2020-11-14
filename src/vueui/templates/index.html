@@ -1,0 +1,9 @@
+<body>
+    <!-- The id 'vm' is just for consistency - it can be anything you want -->
+        <ul id="vm" class="container">
+            <li v-for="todo of todoList">[[ todo.id ]] : [[ todo.task ]] </li>
+        </ul>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+        <script src="{{ url_for('vue_bp.static', filename='index.js') }}"></script>
+</body>
